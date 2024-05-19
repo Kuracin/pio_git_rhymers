@@ -13,24 +13,24 @@ public class DefaultRhymer {
             NUMBERS[++total] = in;
     }
 
-        public boolean callCheck() {
-            return total == minusOne;
+    public boolean callCheck() {
+        return total == minusOne;
+    }
+
+        public boolean isFull() {
+            return total == eleven;
         }
-        
-            public boolean isFull() {
-                return total == eleven;
+
+            protected int peekaboo() {
+                if (callCheck())
+                    return minusOne;
+                return NUMBERS[total];
             }
-        
-                protected int peekaboo() {
+
+                public int countOut() {
                     if (callCheck())
                         return minusOne;
-                    return NUMBERS[total];
+                    return NUMBERS[total--];
                 }
-            
-                    public int countOut() {
-                        if (callCheck())
-                            return minusOne;
-                        return NUMBERS[total--];
-                    }
 
 }
