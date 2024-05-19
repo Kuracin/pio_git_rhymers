@@ -13,13 +13,13 @@ public class DefaultRhymer {
             NUMBERS[++total] = in;
     }
 
-        public boolean callCheck() {
+    public boolean callCheck() {
             return total == minusOne;
         }
         
-            public boolean isFull() {
-                return total == eleven;
-            }
+    public boolean isFull() {
+        return total == eleven;
+    }
         
                 protected int peekaboo() {
                     if (callCheck())
