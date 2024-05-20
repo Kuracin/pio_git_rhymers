@@ -2,8 +2,10 @@ package edu.kis.vh.nursery;
 
 public class DefaultRhymer {
 
-    private final int[] NUMBERS = new int[12];
 
+    public static final int minusOne = -1;
+    public static final int eleven = 11;
+    private final int[] NUMBERS = new int[12];
     private int total = -1;
     public int getTotal() {
         return total;
@@ -13,24 +15,23 @@ public class DefaultRhymer {
         if (!isFull())
             NUMBERS[++total] = in;
     }
-
         protected boolean callCheck() {
-            return total == -1;
+            return total == minusOne;
         }
         
             protected boolean isFull() {
-                return total == 11;
+                return total == eleven;
             }
         
                 protected int peekaboo() {
                     if (callCheck())
-                        return -1;
+                        return minusOne;
                     return NUMBERS[total];
                 }
             
                     protected int countOut() {
                         if (callCheck())
-                            return -1;
+                            return minusOne;
                         return NUMBERS[total--];
                     }
     public int[] getNUMBERS() {
