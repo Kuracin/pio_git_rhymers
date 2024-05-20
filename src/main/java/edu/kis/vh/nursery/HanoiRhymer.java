@@ -17,8 +17,4 @@ public class HanoiRhymer extends DefaultRhymer {
     public int getTotalRejected() {
         return totalRejected;
     }
-
-    public void setTotalRejected(int totalRejected) {
-        this.totalRejected = totalRejected;
-    }
 }
