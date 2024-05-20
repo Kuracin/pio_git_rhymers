@@ -5,6 +5,9 @@ public class DefaultRhymer {
     private final int[] NUMBERS = new int[12];
 
     private int total = -1;
+    public int getTotal() {
+        return total;
+    }
 
     protected void countIn(int in) {
         if (!isFull())
