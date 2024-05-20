@@ -4,7 +4,7 @@ public class DefaultRhymer {
 
     public static final int DEFAULT_INDEX = -1;
     public static final int NUMBERS_CAPACITY = 12;
-    private int[] NUMBERS = new int[NUMBERS_CAPACITY];
+    private final int[] NUMBERS = new int[NUMBERS_CAPACITY];
 
     public int DEFAULT_VALUE = -1;
 
