@@ -2,17 +2,17 @@ package edu.kis.vh.nursery;
 
 public class DefaultRhymer {
 
-    public static final int DEFAULT_INDEX = -1;
+
+
+    
     public static final int NUMBERS_CAPACITY = 12;
-    private final int[] NUMBERS = new int[NUMBERS_CAPACITY];
-
+    public static final int DEFAULT_INDEX = -1;
     public int DEFAULT_VALUE = -1;
-
+    private final int[] NUMBERS = new int[NUMBERS_CAPACITY];
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++DEFAULT_VALUE] = in;
     }
-
     public boolean callCheck() {
         return DEFAULT_VALUE == DEFAULT_INDEX;
     }
@@ -27,10 +27,10 @@ public class DefaultRhymer {
                 return NUMBERS[DEFAULT_VALUE];
             }
 
-                public int countOut() {
+                        public int countOut() {
                     if (callCheck())
                         return DEFAULT_INDEX;
                     return NUMBERS[DEFAULT_VALUE--];
                 }
-
+   
 }
