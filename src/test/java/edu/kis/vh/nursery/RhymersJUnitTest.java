@@ -20,11 +20,12 @@ public class RhymersJUnitTest {
         DefaultRhymer rhymer = new DefaultRhymer();
         boolean result = rhymer.callCheck();
         Assert.assertEquals(true, result);
-
+// TODO: Optional, assertEquals can be replaced with assertTrue
         rhymer.countIn(888);
 
         result = rhymer.callCheck();
         Assert.assertEquals(false, result);
+        // TODO: Optional, assertEquals can be replaced with assertFalse
     }
 
     @Test
@@ -34,11 +35,13 @@ public class RhymersJUnitTest {
         for (int i = 0; i < STACK_CAPACITY; i++) {
             boolean result = rhymer.isFull();
             Assert.assertEquals(false, result);
+            // TODO: Optional, assertEquals can be replaced with assertFalse
             rhymer.countIn(888);
         }
 
         boolean result = rhymer.isFull();
         Assert.assertEquals(true, result);
+        // TODO: Optional, assertEquals can be replaced with assertTrue
     }
 
     @Test

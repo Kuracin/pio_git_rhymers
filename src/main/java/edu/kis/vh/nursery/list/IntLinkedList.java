@@ -1,8 +1,9 @@
 package edu.kis.vh.nursery.list;
 public class IntLinkedList {
-    private static final int Return_if_empty = -1;
+    private static final int Return_if_empty  = -1;
     private Node last;
     private int i;
+    // TODO: delete 'i' field, never used
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -18,6 +19,7 @@ public class IntLinkedList {
     public boolean isFull() {
         return false;
     }
+    // TODO: method unused, returns false without checking any condition, either to be removed or properly implemented
     public int top() {
         if (isEmpty())
             return Return_if_empty;
